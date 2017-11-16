@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+a {
+	cursor: pointer;
+}
+
+/* NAVBAR */
+.navbar {
+	background-color: #ea4c89;;
+	border: white;
+
+	border-radius: 0px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+
+	font-family: 'Source Sans Pro Light', sans-serif;
+	font-size: 1.2em;
+}
+
+.navbar #logo {
+	height: 25px;
+	margin-left: 25px;
+}
+.navbar-right {
+	padding-right: 50px;
+}
+.navbar li {
+	padding-left: 50px;
+}
+.navbar a {
+	color: white !important;
+}
+
+.navbar-right a {
+	padding: 20px;
+	line-height: 15px;
+}
+
+
+
+
+.jumbotron {
+	background-color: #f4f4f4;
+	border-bottom: 1px solid #e5e5e5;
+}
+.container-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.big-title h1 {
+	font-size: 5.3em;
+	background-color: #ea4c89;
+	padding: 4px;
+	font-family: 'Source Sans Pro Light', sans-serif;
+	color: white;
+}
+.big-title h4 {
+	background-color: #ea4c89;
+	color: white;
+	padding: 4px;
+	float: right;
+}
+
+
+/* QUI SUIS JE */
+.container-f-qui {
+
+}
+.container-qui {
+	margin-top: 100px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-qui h4 {
+	font-weight: normal;
+	line-height: 28px;
+}
+
+.myname {
+	background-color: #ea4c89;
+}
+.tlse {
+	background-color: #eb1276;
+}
+
+.bdx {
+	background-color: #009be2;
+}
+.container-qui-img {
+	margin-top: 50px;
+}
+.container-qui-img img {
+	height: 500px;
+	transform:          rotate(270deg);
+	-ms-transform:      rotate(270deg);
+	-moz-transform:     rotate(270deg);
+	-webkit-transform:  rotate(270deg);
+	-o-transform:       rotate(270deg);
+}
+
+
+
+/* QU'AI JE FAIT */
+
+.container-quoi {
+	margin-top: 150px;
+}
+
+.container-quoi h1 {
+	font-family: 'Source Sans Pro Light', sans-serif;
+}
+
+.mydiapoweb img {
+	height: 250px;
+}
+.mydiapo img {
+	height: 350px;
+	padding: 3px;
+}
+
+/* ME CONTACTER */
+
+.container-f-contact {
+	margin-top: 100px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #f1ece6;
+}
+.container-contact {
+	padding-top: 30px;
+}
+.container-contact a {
+	color: black;
+}
+.container-contact img {
+	padding-right: 40px;
+}
+
+
+
+
+/* SNAPCHAT */
+
+.container-f-snap {
+	font-family: 'Source Sans Pro Light', sans-serif;
+	margin-top: 150px;
+	background-color: #f4f4f4;
+}
+
+.container-f-snap-head {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-snap .snap {
+	height: 600px;
+}
+
+.solo-snap {
+	padding: 15px;
+	width: 369px;
+
+}
+
+.photoshop, .snapchat {
+	width: 50px;
+	margin: 0 auto;
+}
