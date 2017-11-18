@@ -7,7 +7,7 @@ a {
 
 /* NAVBAR */
 .navbar {
-	background-color: #ea4c89;;
+	background-color: #ea4c89;
 	border: white;
 
 	border-radius: 0px;
@@ -42,7 +42,10 @@ a {
 
 
 .jumbotron {
-	background-color: #f4f4f4;
+	height: 85vh;
+
+	background-color: #ea4c89; /* #f4f4f4 */
+
 	border-bottom: 1px solid #e5e5e5;
 }
 .container-title {
@@ -51,9 +54,10 @@ a {
 	align-items: center;
 }
 .big-title h1 {
-	font-size: 5.3em;
-	background-color: #ea4c89;
 	padding: 4px;
+	margin-top: 25vh;
+
+	background-color: #ea4c89;
 	font-family: 'Source Sans Pro Light', sans-serif;
 	color: white;
 }
@@ -161,7 +165,7 @@ a {
 }
 
 .container-snap .snap {
-	height: 600px;
+	width: 40vw;
 }
 
 .solo-snap {
