@@ -1,6 +1,8 @@
-
-
 // FR TO EN
+
+$(window).on('load',function() {
+	$(".loader").fadeOut(1200);
+});
 
 $(document).ready(function() {
 
@@ -105,7 +107,6 @@ $('#translate').click(function() {
 
 	}
 
-});
-
 })
 
+});

@@ -2,7 +2,7 @@
 
 /* GLOBAL */
 html, body {
-	height; 100%
+	height:100%;
 	margin: 0;
 	padding: 0;		
 }
@@ -14,6 +14,23 @@ body {
 
 a {
 	cursor: pointer;
+}
+
+/* LODAER */
+
+.loader {
+	position: absolute;
+    background-color: #f3f3f3;
+    font-family: 'Source Sans Pro Light', sans-serif;
+    z-index: 99999;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 /* NAVBAR */
@@ -54,15 +71,16 @@ a {
 
 .jumbotron {
 	height: 85vh;
-
 	background-color: #ea4c89; /* #f4f4f4 */
-
 	border-bottom: 1px solid #e5e5e5;
 }
 .container-title {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.col-title {
+	text-align: center;
 }
 .big-title h1 {
 	padding: 4px;
@@ -76,15 +94,13 @@ a {
 	background-color: #ea4c89;
 	color: white;
 	padding: 4px;
-	float: right;
 }
 
 
 /* QUI SUIS JE */
-.container-f-qui {
-
-}
 .container-qui {
+	font-family: 'Source Sans Pro Light', sans-serif;
+
 	margin-top: 100px;
 	height: 400px;
 	display: flex;
@@ -152,23 +168,42 @@ a {
 /* QU'AI JE FAIT */
 
 .container-quoi {
-	margin-top: 150px;
+	margin-top: 50px;
 }
+
+
+.container-quoi .column-left {
+	height:30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: 'Source Sans Pro Light', sans-serif;
+	background-color: rgba(60,60,62,1);
+	color: #ea4c89;
+}
+
+.container-quoi .column-right {
+	height: 30vh;
+	background-image: url("img/creas_site/logo_SmartCart.jpg");
+	background-repeat: repeat;
+}
+
+
+
+
+
+
 
 .container-quoi h1 {
 	font-family: 'Source Sans Pro Light', sans-serif;
 }
 
-.mydiapoweb img {
-	height: 250px;
-}
-.mydiapo img {
-	height: 350px;
-	padding: 3px;
-}
 
 /* ME CONTACTER */
-
+.col-contact {
+	text-align: center;
+}
 .container-f-contact {
 	margin-top: 100px;
 	padding-bottom: 15px;
@@ -176,19 +211,26 @@ a {
 	font-family: 'Source Sans Pro Light', sans-serif;
 	background-color: #f1ece6;
 }
-.container-contact {
-	padding-top: 30px;
+
+.container-contact .fa.fa-linkedin {
+	font-size: 80px;
+	color: #0097d3;
+}
+.container-contact .fa.fa-github-alt {
+	font-size: 80px;
+	color: #0d2636;
+}
+.container-contact .fa.fa-twitter {
+	font-size: 80px;
+	color: #4aa0ec;
 }
 .container-contact a {
 	color: black;
 }
-.container-contact img {
+.container-contact .fa {
 	padding-right: 40px;
 }
 
-.container-contact a:nth-child(2) img {
-	height: 80px;
-}
 
 
 
