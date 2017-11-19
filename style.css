@@ -19,7 +19,7 @@ a {
 /* LODAER */
 
 .loader {
-	position: absolute;
+	position: fixed;
     background-color: #f3f3f3;
     font-family: 'Source Sans Pro Light', sans-serif;
     z-index: 99999;
@@ -184,16 +184,19 @@ a {
 }
 
 .container-quoi .column-right {
+	padding: 0;
 	height: 30vh;
-	background-image: url("img/creas_site/logo_SmartCart.jpg");
-	background-repeat: repeat;
 }
 
+.col-snapchat {
+	position: relative;
+	width: 50%;
+	overflow:hidden;
+}
 
-
-
-
-
+.col-snapchat img{
+	max-width: 100%;
+}
 
 .container-quoi h1 {
 	font-family: 'Source Sans Pro Light', sans-serif;

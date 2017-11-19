@@ -6,6 +6,7 @@ $(window).on('load',function() {
 
 $(document).ready(function() {
 
+
 $('#translate').click(function() {
 	var langue = $('#translate').text();
 
