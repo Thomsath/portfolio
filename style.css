@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /* GLOBAL */
 html, body {
@@ -65,10 +66,6 @@ a {
 	padding: 20px;
 	line-height: 15px;
 }
-
-
-
-
 .jumbotron {
 	height: 85vh;
 	background-color: #ea4c89; /* #f4f4f4 */
@@ -123,17 +120,14 @@ a {
 .bdx {
 	background-color: #009be2;
 }
-.container-qui-img {
+.col-setup {
+	background-image: url("img/Setup.jpg");
+	background-size: cover;
+
 	margin-top: 50px;
+	height: 400px;
 }
-.container-qui-img img {
-	height: 500px;
-	transform:          rotate(270deg);
-	-ms-transform:      rotate(270deg);
-	-moz-transform:     rotate(270deg);
-	-webkit-transform:  rotate(270deg);
-	-o-transform:       rotate(270deg);
-}
+
 
 /* TRANSITION WITH PHOTOS */
 
@@ -171,42 +165,60 @@ a {
 	margin-top: 50px;
 }
 
-
-.container-quoi .column-left {
+.col-left-snapchat, .col-right-smartcart, .col-left-processeur {
 	height:30vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    text-align: center;
 
 	font-family: 'Source Sans Pro Light', sans-serif;
 	background-color: rgba(60,60,62,1);
 	color: #ea4c89;
 }
 
+.col-right-processeur {
+	height: 30vh;
+	overflow: hidden;
+	background-image: url("img/creas_site/simu_processeur.png");
+	background-size: cover;
+}
+
+.col-left-smartcart {
+	height: 30vh;
+	overflow: hidden;
+	background-image: url("img/smartcart_cover.png");
+	background-size: cover;
+}
+.col-right-snapchat {
+	height:30vh;
+	overflow: hidden;
+	background-image: url("img/snapchat_cover.png");
+	background-size: cover;
+}
+
 .container-quoi .column-right {
 	padding: 0;
 	height: 30vh;
 }
-
-.col-snapchat {
-	position: relative;
-	width: 50%;
-	overflow:hidden;
-}
-
-.col-snapchat img{
-	max-width: 100%;
-}
-
 .container-quoi h1 {
 	font-family: 'Source Sans Pro Light', sans-serif;
 }
 
 
+
+
 /* ME CONTACTER */
-.col-contact {
-	text-align: center;
+
+.col-contact-left, .col-contact-mid, .col-contact-right {
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 25px;
+	font-weight: 800;
 }
+.container-contact {
+	padding : 50px;
+}
+
 .container-f-contact {
 	margin-top: 100px;
 	padding-bottom: 15px;
@@ -215,23 +227,47 @@ a {
 	background-color: #f1ece6;
 }
 
+.container-contact h3 {
+	margin-bottom: 15px;
+}
+.container-contact .network {
+	display: block;
+	color: white;
+
+	padding-bottom: 20px;
+}
 .container-contact .fa.fa-linkedin {
-	font-size: 80px;
+	font-size: 30px;
 	color: #0097d3;
 }
 .container-contact .fa.fa-github-alt {
-	font-size: 80px;
+	font-size: 30px;
 	color: #0d2636;
 }
 .container-contact .fa.fa-twitter {
-	font-size: 80px;
+	font-size: 30px;
 	color: #4aa0ec;
 }
-.container-contact a {
-	color: black;
+
+.container-contact .fa.fa-envelope-o {
+	font-size: 30px;
+	color: white;
 }
+
 .container-contact .fa {
 	padding-right: 40px;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #ea4c89;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -254,13 +290,22 @@ a {
 }
 
 .container-snap .snap {
-	width: 40vw;
+	width: 40vh;
 }
 
 .solo-snap {
 	padding: 15px;
-	width: 369px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
+@media screen and (max-width: 768px) {
+	.solo-snap {
+		text-align: center;
+	}
 }
 
 .photoshop, .snapchat {
@@ -269,15 +314,49 @@ a {
 }
 
 
-/* FOOTER */
+/* SMARTCART */
 
-footer {
-	background-color: #273547;
-	color: white;
+.container-smartcart-top  {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	margin-top: 25px;
+	padding: 35px;
+
+	background-color: #f9f9f9;
+	border-radius: 5px;
+}
+
+.container-smartcart-top h1{
+	font-family: 'Raleway', sans-serif;
+}
+
+.container-smartcart-top h3 {
 	font-family: 'Source Sans Pro', sans-serif;
+}
 
-	height: 100px;
+.container-smartcart-top img {
+	width: 100%;
+}
+
+.container-logo-right, .container-logo-left, .container-affichprods {
+	margin-top: 10px;
+	padding: 15px;
+}
+
+.container-logo-left {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+
+	padding: 15px;
+}
+.container-logo-left img:nth-child(2) {
+	width: 100%;
+}
+
+.container-affichprods img {
+	width: 100%;
 }

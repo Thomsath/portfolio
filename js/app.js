@@ -1,10 +1,25 @@
 // FR TO EN
 
 $(window).on('load',function() {
-	$(".loader").fadeOut(1200);
+	$(".loader").fadeOut(900);
 });
 
 $(document).ready(function() {
+
+	// Smooth scroll
+
+	$('a[href^="#"]').click(function(){
+		var the_id = $(this).attr("href");
+
+		$('html, body').animate({
+			scrollTop:$(the_id).offset().top
+		}, 'slow');
+		return false;
+	});
+
+	// Animate 
+	$('.big-title h1').addClass('animated bounceInDown');
+	$('.big-title h4').addClass('animated bounceInDown');
 
 
 $('#translate').click(function() {
@@ -18,12 +33,13 @@ $('#translate').click(function() {
 	$('#contact').text('Contact me');
 	$('#translate').text('FR');
 
-
-	// Header
-
 	// HEADER
 
-	$('.big-title h4').text('FRONT-END DEVELOPMENT • GRAPH. CREATIONS');
+	$('.big-title h4').html('FRONT-END DEVELOPMENT • GRAPH. CREATIONS<br><i class="fa fa-map-marker" aria-hidden="true"></i> BORDEAUX');
+
+	//FOOTER
+	$('.col-contact-left h3').text('My networks');
+	$('.col-contact-right h3').text ('Frameworks & libraries used')
 
 	//A PROPOS
 
@@ -33,7 +49,7 @@ $('#translate').click(function() {
 
 	$('#sitewebs').text('Websites');
 	$('#creagraphs').text('Creations of all kinds');
-
+	$('footer p').text('Thomas Beaupertuis • 2017 - 2150 (If we\'re still here)');
 
 	// Snapchat
 
@@ -58,19 +74,21 @@ $('#translate').click(function() {
 	$('.stmartial h1').text("Saint Martial d'Artenset ");
 	$('.stmartial p').text('Snapchat filter realized on Photoshop for my home village, Saint Martial d\'Artenset (St Martial d\'Artenset, France) ');
 
+	$('.ruestcath h1').text("St Catherine Street");
+	$('.ruestcath p').text('Snapchat filter realized on Photoshop for the St Catherine street, longer shopping street in Europe (Bordeaux, France)');
+
 	}
 	else if(langue == 'FR') {
 
-			// NAVBAR
+	// NAVBAR
 	$('#about').text('A propos');
 	$('#creas').text('Travaux et réalisations');
-	$('#contact').text('Contact me');
+	$('#contact').text('Me contacter');
 	$('#translate').text('EN');
-
 
 	// HEADER
 
-	$('.big-title h4').text('DEVELOPPEMENT FRONT END • CREA. GRAPHIQUE');
+	$('.big-title h4').html('DEVELOPPEMENT FRONT-END • CREA. GRAPHIQUE<br><i class="fa fa-map-marker" aria-hidden="true"></i> BORDEAUX');
 
 	//A PROPOS
 
@@ -81,7 +99,9 @@ $('#translate').click(function() {
 	$('#sitewebs').text('Sites web');
 	$('#creagraphs').text('Créations en tout genre');
 
-
+	//FOOTER
+	$('.col-contact-left h3').text('Mes réseaux');
+	$('.col-contact-right h3').text ('Frameworks & bibliothèques utilisés')
 
 	// Snapchat
 
@@ -105,7 +125,9 @@ $('#translate').click(function() {
 
 	$('.stmartial h1').text("Saint Martial d'Artenset");
 	$('.stmartial p').text('Filtre Snapchat réalisé sous Photoshop pour mon village d\'origine, Saint Martial d\'Artenset. (St Martial d\'Artenset, France)');
-
+	
+	$('.ruestcath h1').text("Rue St Catherine");
+	$('.ruestcath p').text('Filtre Snapchat réalisé sous Photoshop pour la Rue St Catherine, plus longue rue commerçant d\'Europe. (Bordeaux, France)');
 	}
 
 })
