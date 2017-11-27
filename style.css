@@ -357,6 +357,18 @@ footer {
 	width: 100%;
 }
 
-.container-affichprods img {
+.container-affichprods img{
 	width: 100%;
+}
+
+.col-affichprodsphone img {
+	width: 50%;
+}
+
+.container-explainsproj {
+	padding-bottom: 25px;
+}
+
+.container-explainsproj h2 {
+	font-family: 'Raleway', sans-serif;
 }
